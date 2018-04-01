@@ -1,0 +1,13 @@
+int Sort_c(Matrix* b){
+int min;
+int size_local = N;
+int k = 0;
+  for (int i = 0; i < size_local; i++){
+    min = i;
+    for (int j = i; j < size_local; j++){
+        if (b.vect[j] <= b.vect[min])
+        min = j;
+    }
+    swap (b.vext[i], b.vect[min]);
+  }
+}
